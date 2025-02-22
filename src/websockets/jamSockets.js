@@ -7,8 +7,9 @@ const jamSessions = {}; // Stocke les sessions Jam
 export default function setupJamSockets(server) {
   const io = new Server(server, {
     cors: {
-      origin: ['http://localhost:3000', 'https://spotifyaydt.netlify.app'],
+      origin: ['http://localhost:3000', 'https://spotifyaydt.netlify.app', 'https://spotify-aydt.vercel.app'],
       methods: ['GET', 'POST'],
+      credentials: true,
     },
   });
 
