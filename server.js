@@ -110,7 +110,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   logger.info(`Server running on port ${PORT}`);
 });
-
-server.listen(3002, () => {
+const JAM_PORT = process.env.JAM_PORT || 3002;
+server.listen(JAM_PORT, () => {
   logger.info('🎶 Jam server running on port 3002');
 });
